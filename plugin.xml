@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="rocks.festify.cordova-scheme-helper" version="1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>cordova-scheme-helper</name>
+
+    <platform name="ios">
+        <config-file target="*-Info.plist" parent="CFBundleURLTypes">
+            <array>
+                <dict>
+                    <key>CFBundleTypeRole</key>
+                    <string>Editor</string>
+                    <key>CFBundleURLName</key>
+                    <string>Spotify Auth</string>
+                    <key>CFBundleURLSchemes</key>
+                    <array>
+                        <string>festify-spotify</string>
+                    </array>
+                </dict>
+            </array>
+        </config-file>
+    </platform>
+</plugin>
