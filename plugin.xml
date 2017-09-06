@@ -2,6 +2,13 @@
 <plugin id="rocks.festify.cordova-scheme-helper" version="1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>cordova-scheme-helper</name>
 
+    <platform name="android">
+        <config-file target="res/values/strings.xml" parent="/*">
+            <string name="com_spotify_sdk_redirect_scheme">festify-spotify</string>
+            <string name="com_spotify_sdk_redirect_host">callback</string>
+        </config-file>
+    </platform>
+    
     <platform name="ios">
         <config-file target="*-Info.plist" parent="CFBundleURLTypes">
             <array>
